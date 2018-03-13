@@ -23,10 +23,10 @@ In these examples, the ID is 123.
 
 Register task:
 
-`$ curl -X put localhost:3000/part2/register/123`
+`$ curl -X PUT localhost:3000/part2/register/123`
 
 Complete task:
-`$ curl -X put localhost:3000/part2/complete/123`
+`$ curl -X PUT localhost:3000/part2/complete/123`
 
 Get incomplete Status for last 3 hours:
 `$ curl localhost:3000/part2`
