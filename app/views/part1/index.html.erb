@@ -1,0 +1,11 @@
+<h1>
+  B-Show Task
+</h1>
+<%= form_tag("/part1", method: "get") do %>
+  <hr/>
+  <%= label_tag(:str, "String:") %>
+  <br />
+  <%= text_area_tag(:str)  %>
+  <br />
+  <%= submit_tag("Permutate") %>
+<% end %>
