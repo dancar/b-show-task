@@ -1,5 +1,4 @@
 class Part2Controller < ApplicationController
-  protect_from_forgery only: []
   def all
     render json: Task.all
   end

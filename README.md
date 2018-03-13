@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup:
 
-Things you may want to cover:
+`$ bundle`
 
-* Ruby version
 
-* System dependencies
+## Usage:
 
-* Configuration
+### Part 1:
+`$ curl -X GET -H 'Content-Type: application/json' -d '{"str": "a1B"}' localhost:3000/part1`
 
-* Database creation
+### Part 2:
 
-* Database initialization
+In these examples, the ID is 123.
 
-* How to run the test suite
+Register task:
 
-* Services (job queues, cache servers, search engines, etc.)
+`$ curl -X put localhost:3000/part2/register/123`
 
-* Deployment instructions
+Complete task:
+`$ curl -X put localhost:3000/part2/complete/123`
 
-* ...
+Get incomplete Status for last 3 hours:
+`$ curl -X put localhost:3000/part2/status`
+
+
+## Test:
+
+`$ bundle exec rspec`
