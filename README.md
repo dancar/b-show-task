@@ -1,16 +1,23 @@
 # README
 
-## Setup:
+## Prerequisites
+
+- Ruby 2.5.0
+- Sqlite3
+
+## Setup
 
 `$ bundle`
 
+## Usage
 
-## Usage:
+### Server
+`$ bin/rails server`
 
-### Part 1:
+### Part 1
 `$ curl -X GET -H 'Content-Type: application/json' -d '{"str": "a1B"}' localhost:3000/part1`
 
-### Part 2:
+### Part 2
 
 In these examples, the ID is 123.
 
@@ -22,7 +29,7 @@ Complete task:
 `$ curl -X put localhost:3000/part2/complete/123`
 
 Get incomplete Status for last 3 hours:
-`$ curl -X put localhost:3000/part2/status`
+`$ curl localhost:3000/part2`
 
 
 ## Test:
